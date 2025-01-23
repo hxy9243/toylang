@@ -5,7 +5,7 @@ TOYLANG
 
 This is a toy POV project that shows how the easiest interpreter/transpiler could work. Hopefully it makes you excited about programming.
 
-# Language should look like
+# Overview
 
 ```
 吾有一术曰,降龙十八掌,欲练此术,必先得,青龙
@@ -28,4 +28,12 @@ def 降龙十八掌(青龙, ):
         return 白虎
 白虎=降龙十八掌(2)
 print(白虎)
+```
+
+# Quickstart
+
+At this point everything is in one file. Simply pull the repo and run:
+
+```
+python3 toylang/toylang.py
 ```
