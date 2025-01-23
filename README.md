@@ -1,30 +1,31 @@
 TOYLANG
 ====
 
+# Summary
+
+This is a toy POV project that shows how the easiest interpreter/transpiler could work. Hopefully it makes you excited about programming.
+
 # Language should look like
 
 ```
-吾有一术，曰降龙十八掌
-	必先得 青龙
-
-	若青龙 为1
-		白虎 设 青龙加1
-
-	乃得 白虎
-
-白虎 设 施降龙十八掌于2
-录得 白虎
+吾有一术曰,降龙十八掌,欲练此术,必先得,青龙
+    白虎,设,1
+	若,青龙,为1
+		白虎,设,青龙,加1
+	乃得白虎
+白虎,设,施降龙十八掌,2
+录得白虎
 ```
 
 This is equivalent of:
 
 ```python3
+def 降龙十八掌(青龙, ):
 
-def xianglong(qinglong):
-    if qinglong > 0:
-        baihu = qinglong + 1
-
-    return baihu
-
-baihu = xianglong(2)
+        白虎=1
+        if 青龙==1:
+                白虎=青龙+1
+        return 白虎
+白虎=降龙十八掌(2)
+print(白虎)
 ```
