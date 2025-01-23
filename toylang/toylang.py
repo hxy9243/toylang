@@ -150,12 +150,16 @@ def transpile(program: str) -> str:
 
 program = '''
 吾有一术曰,降龙十八掌,欲练此术,必先得,青龙
-    白虎,设,1
+    白虎,设,0
 	若,青龙,为1
 		白虎,设,青龙,加1
 	乃得白虎
-白虎,设,施降龙十八掌,2
-录得白虎'''
+白虎,设,施降龙十八掌,1
+录得白虎
+
+白虎,设,施降龙十八掌,0
+录得白虎
+'''
 
 transpiled = transpile(program)
 debug(transpiled)
